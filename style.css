@@ -89,3 +89,11 @@ button {
   color: #bd8fe8;
   min-width: 0;
 }
+
+.header-btn {
+    background-color: orangered;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 rgb(168, 45, 0);
+}
