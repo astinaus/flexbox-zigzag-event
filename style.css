@@ -162,6 +162,7 @@ a {
 
 .product-cover {
   border-bottom: 4px solid #000;
+  position: relative;
 }
 
 .product-tag span {
@@ -207,10 +208,6 @@ a {
   color: gray;
   font-weight: bold;
   justify-content: space-between;
-}
-
-.product-cover.soldout {
-  position: relative;
 }
 
 .badge {
