@@ -1,0 +1,91 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  --font-title-size: 40px;
+  --font-img-size: 30px;
+  --font-subtit-size: 24px;
+  --font-litit-size: 18px;
+  --font-ctn-size: 14px;
+  --font-anchor-size: 12px;
+}
+
+h1,
+h2,
+p,
+body {
+  margin: initial;
+  padding: initial;
+}
+button {
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-events {
+  background-color: seashell;
+}
+
+.section-zigzag {
+  background-color: #673399;
+}
+
+.l_wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+
+.header-contents {
+  max-width: 400px;
+}
+
+.plus-btn {
+  justify-content: space-between;
+}
+
+.header-title {
+  flex-shrink: 0;
+  font-size: var(--font-title-size);
+  font-weight: 500;
+}
+.header-title strong {
+  font-weight: 500;
+}
+.header-title.lg {
+  flex-basis: 344px;
+  color: salmon;
+}
+.header-title.lg > strong {
+  box-shadow: inset 0 -0.5em 0 #fff;
+}
+
+.header-title.md {
+  flex-basis: 26%;
+  color: #fff;
+}
+.header-title.md > strong {
+  box-shadow: inset 0 -0.5em 0 orangered;
+}
+
+.header-contents {
+  color: #bd8fe8;
+  min-width: 0;
+}
