@@ -8,6 +8,7 @@
   --font-anchor-size: 12px;
 }
 
+/* reset */
 h1,
 h2,
 p,
@@ -21,6 +22,8 @@ button {
   font: inherit;
   color: inherit;
 }
+/* //reset */
+/* 숨김 처리 */
 .txt-hide {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -29,7 +32,8 @@ button {
   margin: -1px;
   overflow: hidden;
 }
-
+/* /숨김 처리 */
+/* 레이아웃 */
 .section {
   padding: 100px 0;
 }
@@ -46,15 +50,12 @@ button {
   max-width: 1080px;
   margin: 0 auto;
 }
-
+/* //레이아웃 */
+/* header */
 .header {
   display: flex;
   gap: 120px;
   align-items: center;
-}
-
-.header-contents {
-  max-width: 400px;
 }
 
 .plus-btn {
@@ -86,14 +87,28 @@ button {
 }
 
 .header-contents {
+  max-width: 400px;
   color: #bd8fe8;
   min-width: 0;
+  position: relative;
+}
+
+.header-contents::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  top: 50%;
+  left: -120px;
+  transform: translateY(-50%);
+  border: 1px solid;
 }
 
 .header-btn {
-    background-color: orangered;
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 5px;
-    box-shadow: 0 3px 0 rgb(168, 45, 0);
+  background-color: orangered;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgb(168, 45, 0);
 }
+/* //header */
+/*  */
