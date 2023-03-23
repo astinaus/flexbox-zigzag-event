@@ -40,6 +40,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+strong {
+  font-weight: 500;
+}
 /* // reset */
 /* 숨김 처리 */
 .txt-hide {
@@ -85,9 +88,7 @@ a {
   font-size: var(--font-title-size);
   font-weight: 500;
 }
-.header-title strong {
-  font-weight: 500;
-}
+
 .header-title.lg {
   flex-basis: 344px;
   color: salmon;
