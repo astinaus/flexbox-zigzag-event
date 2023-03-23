@@ -348,7 +348,7 @@ a {
   }
   /* //  section-events header 반응형 */
   /* product-card 반응형 */
-  .main {
+  .contents {
     flex-direction: column;
   }
   /* // produci-card 반응형 */
