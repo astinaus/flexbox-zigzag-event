@@ -11,7 +11,10 @@
 /* reset */
 h1,
 h2,
+h3,
 p,
+ul,
+li,
 body {
   margin: initial;
   padding: initial;
@@ -21,6 +24,15 @@ button {
   background: none;
   font: inherit;
   color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 /* //reset */
 /* 숨김 처리 */
@@ -35,7 +47,7 @@ button {
 /* /숨김 처리 */
 /* 레이아웃 */
 .section {
-  padding: 100px 0;
+  padding: 100px 10px;
 }
 
 .section-events {
@@ -111,4 +123,114 @@ button {
   box-shadow: 0 3px 0 rgb(168, 45, 0);
 }
 /* //header */
-/*  */
+/* main */
+main {
+  margin-top: 100px;
+  display: flex;
+  gap: 24px;
+}
+main.column {
+  flex-direction: column;
+}
+/* //main */
+/* project-card */
+.project-card {
+  display: flex;
+  background: white;
+  transition: transform 0.2s;
+}
+
+.project-cover {
+  position: relative;
+  flex-basis: 26%;
+  flex-shrink: 0;
+}
+
+.project-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-cover h3 {
+  position: absolute;
+  color: #fff;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-img-size);
+  background-color: rgba(103, 51, 153, 0.4);
+}
+
+.project-contents {
+  padding: 24px;
+}
+
+.project-contents h3 {
+  color: #673399;
+  font-size: var(--font-litit-size);
+  margin-bottom: 32px;
+}
+
+.project-lists {
+  font-size: var(--font-ctn-size);
+  font-weight: 500;
+}
+
+.project-lists li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.project-lists li + li {
+  margin-top: 10px;
+}
+
+.project-lists li::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bd8fe8;
+}
+/* 짝수번째 project-card 역순배치 */
+.project-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* //project-card */
+/* hover effect */
+.project-card:hover {
+  transform: translate(-2px, -2px);
+}
+
+/* //hover effect */
+/* 반응형 media query */
+@media (max-width: 1010px) {
+  /* section-zigzag header 반응형 */
+  .header.plus-ctn {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .header-title.md {
+    width: 280px;
+  }
+  .header-contents::before {
+    display: none;
+  }
+    /* //section-zigzag header 반응형 */
+}
+
+@media (max-width: 768px) {
+
+  /* project-card 반응형 */
+  .project-card,
+  .project-card:nth-child(even) {
+    flex-direction: column;
+  }
+  /* //project-card 반응형 */
+}
