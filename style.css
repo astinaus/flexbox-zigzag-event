@@ -132,12 +132,12 @@ a {
 }
 /* // header */
 /* main */
-main {
+.contents {
   margin-top: 100px;
   display: flex;
   gap: 24px;
 }
-main.column {
+.contents.column {
   flex-direction: column;
 }
 /* // main */
