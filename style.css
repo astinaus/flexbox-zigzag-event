@@ -148,6 +148,8 @@ main.column {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  box-shadow: 1px 1px 8px 0 #ccc;
+  transition: transform 0.2s;
 }
 
 .product-contents {
@@ -177,7 +179,12 @@ main.column {
   font-size: var(--font-subtit-size);
   margin-bottom: 32px;
   flex-shrink: 0;
-  flex-basis: 58px;
+  min-height: 58px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .product-text {
@@ -214,6 +221,10 @@ main.column {
 
 .sold-out {
   font-weight: 500;
+}
+
+.people {
+  margin-right: 20px;
 }
 
 .people img {
@@ -298,7 +309,8 @@ main.column {
 }
 /* // project-card */
 /* hover effect */
-.project-card:hover {
+.project-card:hover,
+.product-card:hover {
   transform: translate(-3px, -3px);
 }
 
