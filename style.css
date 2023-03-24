@@ -161,10 +161,10 @@ strong {
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 0;
+  border-top: 4px solid #000;
 }
 
 .product-cover {
-  border-bottom: 4px solid #000;
   position: relative;
 }
 
