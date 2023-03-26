@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@500;700&display=swap");
 
 :root {
   font-family: "Montserrat", sans-serif;
@@ -173,6 +173,13 @@ strong {
   max-height: 100%;
 }
 
+.product-tag {
+  min-height: 49px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .product-tag span {
   display: inline-block;
   background-color: #f1e0f8;
@@ -180,8 +187,8 @@ strong {
   font-weight: bold;
   font-size: var(--font-tag-size);
   padding: 5px;
-  margin-bottom: 24px;
   border-radius: 4px;
+  margin-bottom: 5px;
 }
 
 .product-title {
@@ -201,7 +208,13 @@ strong {
   font-weight: 500;
   font-size: var(--font-ctn-size);
   flex-grow: 1;
+  min-height: 126px;
   flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
 }
 
 .product-footer {
@@ -317,6 +330,10 @@ strong {
 .project-card:hover,
 .product-card:hover {
   transform: translate(-3px, -3px);
+}
+
+.product-text:hover {
+  display: inline;
 }
 
 /* // hover effect */
