@@ -261,7 +261,6 @@ strong {
   display: flex;
   background: white;
   transition: transform 0.2s;
-  min-height: 150px;
 }
 
 .project-cover {
@@ -289,6 +288,7 @@ strong {
 
 .project-contents {
   padding: 24px;
+  flex-grow: 1;
 }
 
 .project-contents h3 {
